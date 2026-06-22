@@ -1,0 +1,102 @@
+body {
+    background-color: #333;
+    color: #ccc;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    overflow: hidden; 
+}
+
+a {
+    text-decoration: none;
+    color: #332;          
+    font-size: 18px;
+    margin-top: 15vh;     
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #4CAF50;      
+}
+
+#words-container {
+    width: 95%; 
+    max-width: 1200px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
+.word {
+    display: flex;
+    flex-wrap: wrap;      
+    justify-content: center;
+    gap: 10px;             
+}
+
+
+.vowel, .consonant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ 
+    width: 8vw; 
+    height: 8vw;
+    max-width: 80px;  
+    max-height: 80px;
+    
+    font-size: 10vw;   
+    @media (min-width: 768px) {
+        font-size: 40px; 
+    }
+
+    color: #222;
+    border-radius: 12px;
+    user-select: none; 
+    transition: transform 0.1s ease; 
+}
+
+.vowel {
+    background: #C0C0C0;
+    cursor: pointer;
+}
+
+.consonant {
+    background: #606060;
+
+    cursor: default; 
+}
+
+.vowel:active {
+    transform: scale(0.9); 
+}
+
+
+.correct_letter {
+    background-color: #4CAF50 !important; 
+    color: white;
+}
+
+.incorrect_letter {
+    background-color: #f44336 !important; 
+    color: white;
+    text-decoration: none; 
+}
+
+
+@media (max-width: 480px) {
+    .word {
+        gap: 5px;
+    }
+    .vowel, .consonant {
+        width: 15vw;
+        height: 15vw;
+        border-radius: 8px;
+    }
+}
