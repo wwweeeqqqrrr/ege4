@@ -34,9 +34,10 @@ origins = [
     "http://localhost",
     "http://localhost:8000",
      "http://127.0.0.1:5500",
-    "http://localhost:5500"
+    "http://localhost:5500",
     "https://ege4-production.up.railway.app",
-    "https://ege4-mve1-six.vercel.app"
+    "https://ege4-mve1-six.vercel.app",
+    "https://ege4-mve1-git-main-wwweeeqqqrrrs-projects.vercel.app"
 ]
 
 app.add_middleware(
