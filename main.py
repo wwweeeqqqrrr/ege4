@@ -35,6 +35,7 @@ origins = [
     "http://localhost:8000",
      "http://127.0.0.1:5500",
     "http://localhost:5500"
+    "https://ege4-production.up.railway.app",
 ]
 
 app.add_middleware(

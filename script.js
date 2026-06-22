@@ -1,7 +1,7 @@
 const wordsContainer = document.getElementById('words-container');
 
 
-const API_URL = 'http://localhost:8000';
+const API_URL = 'https://ege4-production.up.railway.app'
 
 
 const VOWELS = "аеёиоуыэюя";
